@@ -28,7 +28,7 @@ export default function Contact() {
                 className="form-control"
                 name="email"
                 id="email"
-                placeholder="email@email.email"
+                placeholder="email@email"
               />
             </div>
             {/* description */}
