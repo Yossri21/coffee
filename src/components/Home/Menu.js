@@ -68,7 +68,7 @@ export default class Menu extends Component {
                   >
                     <div>
                       <Img fixed={node.image.fixed} />
-                    </div>
+                    </div> 
                     {/* item text */}
                     <div className="flex-grow-1 px-3">
                       <div className="d-flex justify-content-between">

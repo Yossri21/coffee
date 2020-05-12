@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="regular joe's"
-    />
+    /> 
     <Info />
     <Menu items={data.menu} />
     <Products />
@@ -27,7 +27,7 @@ export const query = graphql`
     img: file(relativePath: { eq: "default-background.jpeg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -43,7 +43,7 @@ export const query = graphql`
           category
           image {
             fixed(width: 50, height: 50) {
-              ...GatsbyContentfulFixed_tracedSVG
+              ...GatsbyContentfulFixed
             }
           }
         }
